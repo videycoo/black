@@ -1,50 +1,60 @@
 <!doctype html>
-<html amp>
+<html ⚡ lang="en">
 <head>
-<meta charset="utf-8">
-<title>AMP Page</title>
+  <meta charset="utf-8">
+  <title>AMP Page</title>
 
-<link rel="canonical" href="https://black-orpin-five.vercel.app/alcashfbmeta.html">
-<meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://black-orpin-five.vercel.app/">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <!-- AMP -->
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
 
-<style amp-boilerplate>
-body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both}
-@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
-</style>
-<noscript><style amp-boilerplate>body{-webkit-animation:none}</style></noscript>
+  <!-- OG TAGS (IMPORTANT) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AMP Page">
+  <meta property="og:description" content="Yeh AMP page Facebook image preview ke sath perfectly kaam karta hai.">
+  <meta property="og:url" content="https://black-orpin-five.vercel.app/">
 
-<!-- 🔥 AUTO IMAGE FETCH -->
-<meta property="og:image"
-content="https://black-orpin-five.vercel.app/api/fetch-image?url=https://scontent.flhe3-1.fna.fbcdn.net/v/t45.5328-4/618651339_1437448107971067_1083994928490572112_n.jpg">
-<meta property="og:image:width" content="717">
-<meta property="og:image:height" content="717">
-<meta property="og:image:type" content="image/jpeg">
+  <!-- 🔥 STATIC IMAGE (NO WHITE ISSUE) -->
+  <meta property="og:image" content="https://black-orpin-five.vercel.app/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
 
-<meta property="og:title" content="AMP Page">
-<meta property="og:description" content="Auto fetched image preview">
-<meta property="og:type" content="website">
+  <style amp-boilerplate>
+    body{visibility:hidden}
+  </style>
+  <noscript>
+    <style amp-boilerplate>
+      body{visibility:visible}
+    </style>
+  </noscript>
 
-<style amp-custom>
-body{font-family:Arial;margin:0}
-.container{padding:20px}
-</style>
+  <style amp-custom>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 24px;
+    }
+  </style>
 </head>
 
 <body>
 
-<amp-img
-src="https://black-orpin-five.vercel.app/api/fetch-image?url=https://scontent.flhe3-1.fna.fbcdn.net/v/t45.5328-4/618651339_1437448107971067_1083994928490572112_n.jpg"
-width="717"
-height="717"
-layout="responsive">
-</amp-img>
+  <h1>AMP Page Working</h1>
 
-<div class="container">
-<h1>AMP Page</h1>
-<p>Image automatically fetched & served from this domain.</p>
-</div>
+  <amp-img
+    src="/og-image.jpg"
+    width="1200"
+    height="630"
+    layout="responsive"
+    alt="Preview Image">
+  </amp-img>
 
 </body>
 </html>
