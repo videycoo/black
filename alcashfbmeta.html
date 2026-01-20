@@ -1,5 +1,5 @@
 <!doctype html>
-<html amp lang="en">
+<html amp>
 <head>
 <meta charset="utf-8">
 <title>AMP Page</title>
@@ -15,18 +15,16 @@ body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both}
 </style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none}</style></noscript>
 
-<!-- FACEBOOK OG -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="AMP Page">
-<meta property="og:description" content="Facebook CDN image proxy ke zariye fetch ki ja rahi hai">
-<meta property="og:url" content="https://black-orpin-five.vercel.app/alcashfbmeta.html">
-
-<!-- 🔥 PROXY IMAGE (FB CDN INSIDE) -->
+<!-- 🔥 AUTO IMAGE FETCH -->
 <meta property="og:image"
-content="https://black-orpin-five.vercel.app/api/img?url=https://scontent.flhe3-1.fna.fbcdn.net/v/t45.5328-4/618651339_1437448107971067_1083994928490572112_n.jpg">
+content="https://black-orpin-five.vercel.app/api/fetch-image?url=https://scontent.flhe3-1.fna.fbcdn.net/v/t45.5328-4/618651339_1437448107971067_1083994928490572112_n.jpg">
 <meta property="og:image:width" content="717">
 <meta property="og:image:height" content="717">
 <meta property="og:image:type" content="image/jpeg">
+
+<meta property="og:title" content="AMP Page">
+<meta property="og:description" content="Auto fetched image preview">
+<meta property="og:type" content="website">
 
 <style amp-custom>
 body{font-family:Arial;margin:0}
@@ -37,7 +35,7 @@ body{font-family:Arial;margin:0}
 <body>
 
 <amp-img
-src="https://black-orpin-five.vercel.app/api/img?url=https://scontent.flhe3-1.fna.fbcdn.net/v/t45.5328-4/618651339_1437448107971067_1083994928490572112_n.jpg"
+src="https://black-orpin-five.vercel.app/api/fetch-image?url=https://scontent.flhe3-1.fna.fbcdn.net/v/t45.5328-4/618651339_1437448107971067_1083994928490572112_n.jpg"
 width="717"
 height="717"
 layout="responsive">
@@ -45,7 +43,7 @@ layout="responsive">
 
 <div class="container">
 <h1>AMP Page</h1>
-<p>Facebook CDN image proxy ke through fetch ho rahi hai.</p>
+<p>Image automatically fetched & served from this domain.</p>
 </div>
 
 </body>
